@@ -1,0 +1,326 @@
+.btn{
+    background-color: black;
+    color: aliceblue;
+    height: 30px;
+    width: 100px;
+    text-align: top;
+    font-size: small;
+
+}
+
+.btn:hover{
+    background-color: black;
+    color: aliceblue;
+    border-color: blue;
+    border-width: 2px;
+}
+.navbar-nav{
+    gap: 30px;
+    
+}
+.container{
+    background-color: aliceblue;
+    color: aliceblue;
+}
+.nav-link{
+    color: black;
+}
+.btn-start{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+.head-div {
+    display: flex;
+    justify-content: space-around; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for text content */
+.head-1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.para-1 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.btn-start {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for the image */
+.head-div img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    display: block; /* Prevent inline spacing issues */
+}
+
+/* Responsive Design */
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .head-div {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align for smaller screens */
+    }
+
+    .head-1, .para-1 {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .btn-start {
+        margin: 0 auto; /* Center the button */
+    }
+
+    .head-div img {
+        margin-top: 20px;
+    }
+}
+.card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px auto;
+}
+.card img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+.container-card {
+    margin-top: 50px;
+}
+@media (min-width: 768px) {
+    .card {
+        margin: 0 auto;
+    }
+}
+.heading-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.heading-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Default to column for mobile */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main-2 {
+    border: 3px solid black;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn {
+    width: 150px;
+    padding: 0px 10px;
+    margin-left: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+
+/* When the screen is wider than 600px (tablets, desktops) */
+@media screen and (min-width: 600px) {
+    .main {
+        flex-direction: row; /* Side by side layout */
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .heading-bottom {
+        margin-bottom: 0; /* Reduce space under heading */
+    }
+
+    .main-2 {
+        width: 280px; /* Maintain width for larger screens */
+        margin-top: 0; /* Adjust for side-by-side layout */
+    }
+
+    .btn {
+        margin-left: 30px; /* Add more space for larger screens */
+    }
+}
+
+/* For smaller screens */
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column; /* Stack the elements vertically on small screens */
+        align-items: center;
+    }
+
+    .heading-bottom h1 {
+        font-size: 1.8rem; /* Adjust heading size */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-2 {
+        width: 80%; /* Make the input box more responsive */
+        margin-top: 20px; /* Space between input and button */
+    }
+
+    .btn {
+        width: 100%; /* Make the button span the width */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.footer-column {
+    margin: 10px 0;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #007BFF;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+}
+.footer-main{
+    margin-left: 50px;
+    margin: auto;
+}
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.footer-end div {
+    margin: 10px 0;
+}
+
+.footer-end sub {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-end img {
+    margin: 0 10px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer-end img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-end {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-end div {
+        text-align: center;
+    }
+
+    .footer-end img {
+        margin: 5px;
+    }
+}
